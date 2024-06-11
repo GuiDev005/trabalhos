@@ -14,11 +14,11 @@ VALUES
 -- Inserindo dados na tabela Produto
 INSERT INTO Produto (CodigoProduto, NomeProduto, DataFabricacao, Validade, Preco, QuantidadeProduto)
 VALUES 
-('001', 'Gasolina Comum', '2024-06-04', '2025-06-04', 5.50, 100),
-('002', 'Óleo Lubrificante', '2024-06-04', '2025-06-04', 15.99, 50),
-('003', 'Etanol', '2024-06-04', '2025-06-04', 4.00, 200),
-('004', 'Diesel', '2024-06-04', '2025-06-04', 4.50, 150),
-('005', 'Aditivo para Combustível', '2024-06-04', '2025-06-04', 8.99, 80);
+('001', 'Gasolina Comum', '2024-01-02', '2025-03-19', 5.50, 100),
+('002', 'Óleo Lubrificante', '2024-01-13', '2025-06-04', 15.99, 50),
+('003', 'Etanol', '2023-02-01', '2025-06-04', 4.00, 200),
+('004', 'Diesel', '2023-06-04', '2025-06-04', 4.50, 150),
+('005', 'Aditivo para Combustível', '2023-06-04', '2025-06-04', 8.99, 80);
 
 -- Inserindo dados na tabela Vendedor
 INSERT INTO Vendedor (CPFVendedor, NomeVendedor, TelefoneVendedor)
@@ -41,10 +41,10 @@ VALUES
 -- Inserindo dados na tabela Compra
 INSERT INTO Compra (fk_Cliente_CadastroCliente, fk_Produto_CodigoProduto, DataCompra, CodigoCompra, QuantidadeVenda, MetodoPagamento)
 VALUES 
-('001', '001', '2024-06-04', '001', 10, 'Cartão'),
-('002', '002', '2024-06-04', '002', 5, 'Dinheiro'),
+('001', '001', '2024-05-01', '001', 10, 'Cartão'),
+('002', '002', '2024-03-04', '002', 5, 'Dinheiro'),
 ('003', '003', '2024-06-04', '003', 20, 'Dinheiro'),
-('004', '004', '2024-06-04', '004', 15, 'Cartão'),
+('004', '004', '2024-06-01', '004', 15, 'Cartão'),
 ('005', '005', '2024-06-04', '005', 8, 'Dinheiro');
 
 -- Inserindo dados na tabela Vende
@@ -59,8 +59,8 @@ VALUES
 -- Inserindo dados na tabela Fornece
 INSERT INTO Fornece (fk_Fornecedor_CNPJ, fk_Produto_CodigoProduto, DataFornece)
 VALUES 
-('12345678901234', '001', '2024-06-04'),
-('98765432109876', '002', '2024-06-04'),
-('11122233344455', '003', '2024-06-04'),
-('44455566677788', '004', '2024-06-04'),
-('88899977766655', '005', '2024-06-04');
+('12345678901234', '001', '2024-02-04'),
+('98765432109876', '002', '2024-02-04'),
+('11122233344455', '003', '2024-02-04'),
+('44455566677788', '004', '2024-02-04'),
+('88899977766655', '005', '2024-02-04');
